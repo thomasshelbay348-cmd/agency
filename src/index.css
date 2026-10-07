@@ -487,8 +487,8 @@ ul {
   height: 52px;
   margin-bottom: 1.1rem;
   border-radius: 14px;
-  color: var(--primary);
-  background: rgba(36, 87, 255, 0.1);
+  background: var(--accent);
+  color: #060b1f;
 }
 
 .check-list {

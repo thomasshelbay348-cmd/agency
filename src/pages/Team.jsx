@@ -5,7 +5,7 @@ import usePageTitle from '../hooks/usePageTitle.js';
 import { team } from '../data/site.js';
 
 export default function Team() {
-  usePageTitle('Team');
+  usePageTitle('NexMove Developments | Team');
 
   return (
     <>

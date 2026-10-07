@@ -55,7 +55,7 @@ const steps = [
 
 /* ── Testimonials ── */
 const testimonials = [
-  { name: 'Ahmed Raza', role: 'CEO, TechVenture PK', text: 'Digital Portal transformed our operations completely. Their AI automation saved us 20+ hours per week. Exceptional results and professionalism.' },
+  { name: 'Ahmed Raza', role: 'CEO, TechVenture PK', text: 'NexMove Developments transformed our operations completely. Their AI automation saved us 20+ hours per week. Exceptional results and professionalism.' },
   { name: 'Sarah Mitchell', role: 'Founder, E-Commerce Brand', text: 'The branding and digital marketing team delivered beyond expectations. Our online sales grew 180% within 3 months of working with them.' },
   { name: 'Usman Tariq', role: 'Director, FinTech Startup', text: 'Their custom software development is top-tier. Clean code, on-time delivery and a team that truly understands the product vision.' },
 ];
@@ -69,7 +69,7 @@ const whyUs = [
 ];
 
 export default function Home() {
-  usePageTitle('Digital Transformation Company | Digital Portal Official');
+  usePageTitle('Digital Transformation Company | NexMove Developments Official');
 
   return (
     <>
@@ -83,6 +83,7 @@ export default function Home() {
           muted
           loop
           playsInline
+          preload="auto"
           aria-hidden="true"
         />
         <div className="dpo-hero-bg-overlay" />
@@ -107,8 +108,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="dpo-hero-title"
           >
-            Transform Your Business With{' '}
-            <span className="dpo-highlight">Digital Innovation</span>
+            Transforms Your Business With{' '}
+            <span className="dpo-highlight">Digital Innovations</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -222,7 +223,7 @@ export default function Home() {
                 We Deliver <span className="dpo-highlight">Results</span>
               </h2>
               <p className="dpo-section-sub" style={{ maxWidth: '480px' }}>
-                Digital Portal Official combines deep technical expertise with a results-first
+                NexMove Developments combines deep technical expertise with a results-first
                 mindset. Every solution we build is designed to generate real, measurable
                 business impact for you.
               </p>

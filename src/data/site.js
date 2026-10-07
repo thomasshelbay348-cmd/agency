@@ -120,8 +120,8 @@ export const faqs = [
 ];
 
 export const team = [
-  { name: 'Ayesha Khan', role: 'Founder & Creative Director', bio: 'Leads strategy and design with 8 years in digital branding.' },
-  { name: 'Hamza Ali', role: 'Lead Full-stack Developer', bio: 'React, Node and Firebase specialist who loves clean architecture.' },
+  { name: 'ALI Hamza', role: 'Founder & Creative Director', bio: 'Leads strategy and design with 5 years in digital branding.' },
+  { name: 'Subhan Ahmad', role: 'Lead Full-stack Developer', bio: 'React, Node and Firebase specialist who loves clean architecture.' },
   { name: 'Sara Malik', role: 'UI / UX Designer', bio: 'Turns messy ideas into simple, beautiful interfaces.' },
   { name: 'Usman Raza', role: 'Growth Marketer', bio: 'SEO and paid-media expert focused on measurable results.' },
 ];

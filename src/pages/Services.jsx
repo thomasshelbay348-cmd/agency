@@ -5,7 +5,7 @@ import usePageTitle from '../hooks/usePageTitle.js';
 import { services } from '../data/site.js';
 
 export default function Services() {
-  usePageTitle('Services');
+  usePageTitle('NexMove Developments | Services');
 
   return (
     <>
