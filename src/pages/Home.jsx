@@ -336,20 +336,20 @@ export default function Home() {
           </Reveal>
           <div className="dpo-cta-contact-info">
             <Reveal direction="left" delay={150}>
-              <a href="tel:+923147374627" className="dpo-cta-contact-item">
+              <a href="tel:+923225673641" className="dpo-cta-contact-item">
                 <span className="dpo-cta-contact-icon">📞</span>
                 <div>
                   <span className="dpo-cta-contact-label">Call Us</span>
-                  <span className="dpo-cta-contact-val">+92 314 737 4627</span>
+                  <span className="dpo-cta-contact-val">+92 322 5673641</span>
                 </div>
               </a>
             </Reveal>
             <Reveal direction="left" delay={300}>
-              <a href="mailto:digitalportalofficial@gmail.com" className="dpo-cta-contact-item">
+              <a href="mailto:nexmove.pk@gmail.com" className="dpo-cta-contact-item">
                 <span className="dpo-cta-contact-icon">✉️</span>
                 <div>
                   <span className="dpo-cta-contact-label">Email Us</span>
-                  <span className="dpo-cta-contact-val">digitalportalofficial@gmail.com</span>
+                  <span className="dpo-cta-contact-val">nexmove.pk@gmail.com</span>
                 </div>
               </a>
             </Reveal>
@@ -358,7 +358,7 @@ export default function Home() {
                 <span className="dpo-cta-contact-icon">📍</span>
                 <div>
                   <span className="dpo-cta-contact-label">Our Office</span>
-                  <span className="dpo-cta-contact-val">166-C DHA Phase 8, Lahore</span>
+                  <span className="dpo-cta-contact-val">128-J DHA Phase 6, Lahore</span>
                 </div>
               </div>
             </Reveal>
