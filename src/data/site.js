@@ -1,4 +1,4 @@
-import { Globe, Monitor, Smartphone, PenTool, TrendingUp, Bot, MapPin, Megaphone } from 'lucide-react';
+import { Globe, Monitor, Smartphone, PenTool, TrendingUp, Bot, MapPin, Megaphone, Cpu } from 'lucide-react';
 
 // All text/content lives here. Edit this file to rebrand the whole site.
 // NOTE: everything below is placeholder content - replace with your own.
@@ -80,6 +80,12 @@ export const services = [
     title: 'Social Media Marketing',
     text: 'Engaging social media campaigns that build brand loyalty and connect you with the right audience.',
     points: ['Content strategy', 'Community management', 'Paid social ads', 'Performance reporting'],
+  },
+  {
+    icon: Cpu,
+    title: 'AI & Automation',
+    text: 'Leverage cutting-edge Artificial Intelligence to streamline workflows and boost productivity.',
+    points: ['Custom AI Chatbots', 'Workflow Automation', 'LLM Integrations', 'Data Analysis & Insights'],
   },
 ];
 
