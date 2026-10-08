@@ -73,17 +73,17 @@ const whyUs = [
 // Aap in images ko apni actual image paths ke sath replace kar sakte hain.
 // Apni images ko 'public' folder mein sochein jaise 'public/brands/prestige.png' aur path yahan '/brands/prestige.png' dein.
 const trustedBrands = [
-  { name: 'Prestige Chauffeur London', img: '/public/prestige chauffeur.jpg', description: 'Provided premium digital branding and web presence for luxury chauffeur services.' },
-  { name: 'London Prestige Chauffeur', img: '/public/london prestige.jpg', description: 'Developed a high-performance booking platform to streamline their operations.' },
-  { name: 'Airport Luggage Vans', img: '/public/airport luggage.jpg', description: 'Implemented local SEO and a responsive website to boost their transport services.' },
-  { name: 'Al Fatima Academy', img: '/public/al fatima.jpg', description: 'Created an engaging e-learning portal for students and administration.' },
-  { name: 'Nobel Build Repairs (NBR)', img: '/public/nobel build repair.jpg', description: 'Designed a professional corporate identity and portfolio showcase website.' },
-  { name: 'BJ Architects', img: '/public/bj.jpg', description: 'Built a visually stunning portfolio to highlight their architectural projects.' },
-  { name: 'Digital portal services', img: '/public/DPO.jpg', description: 'Delivered an integrated digital transformation strategy and system automation.' },
-  { name: 'Sofil Solutions', img: '/public/sofil solution.jpg', description: 'Engineered custom software solutions tailored for their enterprise needs.' },
-  { name: 'Ustad Labha Food Point', img: '/public/ustad labha.jpg', description: 'Managed social media marketing to significantly increase their local footfall.' },
-  { name: 'RSP Water Plant', img: '/public/rsp water.jpg', description: 'Developed an inventory and distribution tracking system for water supply.' },
-  { name: 'AITS OFFICIAL', img: '/public/aits.jpg', description: 'Provided end-to-end tech consultancy and scalable cloud infrastructure.' }
+  { name: 'Prestige Chauffeur London', img: '/prestige chauffeur.jpg', description: 'Provided premium digital branding and web presence for luxury chauffeur services.' },
+  { name: 'London Prestige Chauffeur', img: '/london prestige.jpg', description: 'Developed a high-performance booking platform to streamline their operations.' },
+  { name: 'Airport Luggage Vans', img: '/airport luggage.jpg', description: 'Implemented local SEO and a responsive website to boost their transport services.' },
+  { name: 'Al Fatima Academy', img: '/al fatima.jpg', description: 'Created an engaging e-learning portal for students and administration.' },
+  { name: 'Nobel Build Repairs (NBR)', img: '/nobel build repair.jpg', description: 'Designed a professional corporate identity and portfolio showcase website.' },
+  { name: 'BJ Architects', img: '/bj.jpg', description: 'Built a visually stunning portfolio to highlight their architectural projects.' },
+  { name: 'Digital portal services', img: '/DPO.jpg', description: 'Delivered an integrated digital transformation strategy and system automation.' },
+  { name: 'Sofil Solutions', img: '/sofil solution.jpg', description: 'Engineered custom software solutions tailored for their enterprise needs.' },
+  { name: 'Ustad Labha Food Point', img: '/ustad labha.jpg', description: 'Managed social media marketing to significantly increase their local footfall.' },
+  { name: 'RSP Water Plant', img: '/rsp water.jpg', description: 'Developed an inventory and distribution tracking system for water supply.' },
+  { name: 'AITS OFFICIAL', img: '/aits.jpg', description: 'Provided end-to-end tech consultancy and scalable cloud infrastructure.' }
 ];
 
 export default function Home() {
