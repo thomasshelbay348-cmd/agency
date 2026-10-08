@@ -58,6 +58,8 @@ const testimonials = [
   { name: 'Ahmed Raza', role: 'CEO, TechVenture PK', text: 'NexMove Developments transformed our operations completely. Their AI automation saved us 20+ hours per week. Exceptional results and professionalism.' },
   { name: 'Sarah Mitchell', role: 'Founder, E-Commerce Brand', text: 'The branding and digital marketing team delivered beyond expectations. Our online sales grew 180% within 3 months of working with them.' },
   { name: 'Usman Tariq', role: 'Director, FinTech Startup', text: 'Their custom software development is top-tier. Clean code, on-time delivery and a team that truly understands the product vision.' },
+  { name: 'Ali Khan', role: 'Marketing Head, RetailPro', text: 'Their SEO optimization strategies pushed our main keywords to the first page within a few months. Our organic traffic has doubled and the ROI is amazing.' },
+  { name: 'Fatima Zohra', role: 'Co-Founder, EduTech', text: 'The web development team built a highly responsive, modern, and fast platform for our students. The user experience is phenomenal and code quality is flawless.' },
 ];
 
 /* ── Why choose us ── */
@@ -66,6 +68,22 @@ const whyUs = [
   { icon: '⚡', title: 'Fast Turnaround', text: 'We move fast without compromising quality — because your time is money.' },
   { icon: '🔒', title: 'Transparent Pricing', text: 'No hidden fees, no surprises. Clear quotes and honest timelines every time.' },
   { icon: '💡', title: 'Innovative Solutions', text: 'We leverage the latest AI and technology to give your business a competitive edge.' },
+];
+
+// Aap in images ko apni actual image paths ke sath replace kar sakte hain.
+// Apni images ko 'public' folder mein sochein jaise 'public/brands/prestige.png' aur path yahan '/brands/prestige.png' dein.
+const trustedBrands = [
+  { name: 'Prestige Chauffeur London', img: '/public/prestige chauffeur.jpg', description: 'Provided premium digital branding and web presence for luxury chauffeur services.' },
+  { name: 'London Prestige Chauffeur', img: '/public/london prestige.jpg', description: 'Developed a high-performance booking platform to streamline their operations.' },
+  { name: 'Airport Luggage Vans', img: '/public/airport luggage.jpg', description: 'Implemented local SEO and a responsive website to boost their transport services.' },
+  { name: 'Al Fatima Academy', img: '/public/al fatima.jpg', description: 'Created an engaging e-learning portal for students and administration.' },
+  { name: 'Nobel Build Repairs (NBR)', img: '/public/nobel build repair.jpg', description: 'Designed a professional corporate identity and portfolio showcase website.' },
+  { name: 'BJ Architects', img: '/public/bj.jpg', description: 'Built a visually stunning portfolio to highlight their architectural projects.' },
+  { name: 'Digital portal services', img: '/public/DPO.jpg', description: 'Delivered an integrated digital transformation strategy and system automation.' },
+  { name: 'Sofil Solutions', img: '/public/sofil solution.jpg', description: 'Engineered custom software solutions tailored for their enterprise needs.' },
+  { name: 'Ustad Labha Food Point', img: '/public/ustad labha.jpg', description: 'Managed social media marketing to significantly increase their local footfall.' },
+  { name: 'RSP Water Plant', img: '/public/rsp water.jpg', description: 'Developed an inventory and distribution tracking system for water supply.' },
+  { name: 'AITS OFFICIAL', img: '/public/aits.jpg', description: 'Provided end-to-end tech consultancy and scalable cloud infrastructure.' }
 ];
 
 export default function Home() {
@@ -93,16 +111,16 @@ export default function Home() {
           ))}
         </div>
         <div className="container dpo-hero-content">
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }} 
-            animate={{ opacity: 1, y: 0 }} 
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="dpo-hero-badge"
           >
             <span className="dpo-badge-dot" />
             Digital Transformation Experts - Lahore, Pakistan
           </motion.div>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -111,7 +129,7 @@ export default function Home() {
             Transforms Your Business With{' '}
             <span className="dpo-highlight">Digital Innovations</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -120,7 +138,7 @@ export default function Home() {
             We are a full service digital transformation company delivering AI automation,
             software development, branding and performance marketing all under one roof.
           </motion.p>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -159,13 +177,18 @@ export default function Home() {
                 </p>
               </Reveal>
             </div>
-            
+
             <Reveal direction="up" delay={200}>
               <div className="dpo-trusted-logos">
                 <div className="dpo-trusted-logos-track">
-                  {[...['Startup Lahore', 'PakTech Solutions', 'NovaBrand', 'SwiftApps', 'GrowthLab', 'DigitalEdge'], ...['Startup Lahore', 'PakTech Solutions', 'NovaBrand', 'SwiftApps', 'GrowthLab', 'DigitalEdge']].map((b, i) => (
-                    <div key={`${b}-${i}`} className="dpo-trusted-logo-card">
-                      <span className="dpo-trusted-logo">{b}</span>
+                  {[...trustedBrands, ...trustedBrands].map((b, i) => (
+                    <div key={`${b.name}-${i}`} className="dpo-trusted-logo-card" style={{
+                      backgroundImage: `url('${b.img}')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundColor: '#ffffff'
+                    }}>
                     </div>
                   ))}
                 </div>
@@ -290,21 +313,72 @@ export default function Home() {
               </h2>
             </div>
           </Reveal>
-          <div className="dpo-testi-grid">
-            {testimonials.map((t, i) => (
-              <TiltCard key={t.name} depth={20} direction={i % 2 === 0 ? 'right' : 'up'} delay={i * 150}>
-                <div className="dpo-testi-card">
-                  <div className="dpo-testi-stars">★★★★★</div>
-                  <blockquote className="dpo-testi-quote">"{t.text}"</blockquote>
-                  <div className="dpo-testi-author">
-                    <div className="dpo-testi-avatar">{t.name.charAt(0)}</div>
-                    <div>
-                      <strong className="dpo-testi-name">{t.name}</strong>
-                      <span className="dpo-testi-role">{t.role}</span>
+          <Reveal direction="up" delay={200}>
+            <div className="dpo-testi-slider">
+              <div className="dpo-testi-track">
+                {[...testimonials, ...testimonials].map((t, i) => (
+                  <div className="dpo-testi-card-wrapper" key={`${t.name}-${i}`}>
+                    <div className="dpo-testi-card">
+                      <div className="dpo-testi-stars">★★★★★</div>
+                      <blockquote className="dpo-testi-quote">"{t.text}"</blockquote>
+                      <div className="dpo-testi-author">
+                        <div className="dpo-testi-avatar">{t.name.charAt(0)}</div>
+                        <div>
+                          <strong className="dpo-testi-name">{t.name}</strong>
+                          <span className="dpo-testi-role">{t.role}</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+      {/* brands */}
+      <section>
+        <div className="container">
+          <Reveal direction="left">
+            <div className="dpo-section-header">
+              <span className="dpo-eyebrow">Brands We've Worked With</span>
+              <h2 className="dpo-section-title">
+                Trusted By {' '}
+                <span className="dpo-highlight">Leading Brands</span>
+              </h2>
+            </div>
+          </Reveal>
+          
+          <div className="dpo-trusted-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
+            {trustedBrands.map((b, i) => (
+              <Reveal key={`${b.name}-${i}`} direction="up" delay={i * 50}>
+                <div className="dpo-trusted-logo-card" style={{ 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  width: '100%', 
+                  height: '100%', 
+                  background: 'rgba(255, 255, 255, 0.05)', 
+                  border: '1px solid rgba(255, 255, 255, 0.1)', 
+                  borderRadius: '16px', 
+                  overflow: 'hidden',
+                  padding: '1.5rem',
+                  textAlign: 'center'
+                }}>
+                  <div style={{
+                    width: '100%',
+                    height: '120px',
+                    backgroundImage: `url('${b.img}')`,
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundColor: '#ffffff',
+                    borderRadius: '10px',
+                    marginBottom: '1.5rem'
+                  }}></div>
+                  <h3 style={{ fontSize: '1.1rem', color: '#fff', marginBottom: '0.5rem' }}>{b.name}</h3>
+                  <p style={{ fontSize: '0.9rem', color: '#94a3b8', margin: 0, lineHeight: 1.6 }}>{b.description}</p>
                 </div>
-              </TiltCard>
+              </Reveal>
             ))}
           </div>
         </div>

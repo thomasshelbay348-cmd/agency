@@ -120,10 +120,10 @@ export const faqs = [
 ];
 
 export const team = [
-  { name: 'ALI Hamza', role: 'Founder & Creative Director', bio: 'Leads strategy and design with 5 years in digital branding.' },
+  { name: 'ALI Hamza', role: 'Founder & Software Developer', bio: 'Leads strategy and development with 5 years in software engineering.' },
   { name: 'Subhan Ahmad', role: 'Lead Full-stack Developer', bio: 'React, Node and Firebase specialist who loves clean architecture.' },
-  { name: 'Sara Malik', role: 'UI / UX Designer', bio: 'Turns messy ideas into simple, beautiful interfaces.' },
-  { name: 'Usman Raza', role: 'Growth Marketer', bio: 'SEO and paid-media expert focused on measurable results.' },
+  { name: 'Mehwish Fahad', role: 'Off Page SEO Expert', bio: 'Focuses on building high-quality backlinks and improving website authority.' },
+  { name: 'Faiza Rafique', role: 'SMM Manager', bio: 'Social Media Manager and Content Specialist.' },
 ];
 
 export const testimonials = [

@@ -46,8 +46,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        &copy; {new Date().getFullYear()} {site.name}. All rights reserved.
+        <div>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.</div>
+        <div>Founder & CEO: Ali Hamza  |  Vision  ·  Leadership  ·  Innovation  ·  Growth</div>
       </div>
+
     </footer>
   );
 }

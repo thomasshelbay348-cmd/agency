@@ -823,6 +823,11 @@ ul {
   padding: 1.4rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* ---------- 404 ---------- */
@@ -1652,10 +1657,29 @@ ul {
 }
 
 /* ════════ TESTIMONIALS ════════ */
-.dpo-testi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+.dpo-testi-slider {
+  display: flex;
+  overflow: hidden;
+  padding: 1rem 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.dpo-testi-track {
+  display: flex;
   gap: 1.5rem;
+  animation: marquee-scroll 30s linear infinite reverse;
+  will-change: transform;
+}
+
+.dpo-testi-slider:hover .dpo-testi-track {
+  animation-play-state: paused;
+}
+
+.dpo-testi-card-wrapper {
+  flex: 0 0 auto;
+  width: 350px;
+  max-width: 85vw;
 }
 
 .dpo-testi-card {
@@ -1728,7 +1752,7 @@ ul {
   position: relative;
   overflow: hidden;
   padding: 6rem 0;
-  background: linear-gradient(135deg, #2457FF 0%, #060b1f 50%, #C8FF3D 100%);
+  background: linear-gradient(135deg, #060b1f 0%, #000000 100%);
 }
 
 .dpo-cta-bg {
